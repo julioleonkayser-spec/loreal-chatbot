@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Oréal | Smart Routine &amp; Product Advisor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <!-- Use the logo file that came with your starter (check the img folder for the exact name) -->
+    <img src="img/loreal-logo.png" alt="L'Oréal" class="logo">
+    <h1>Smart Routine &amp; Product Advisor</h1>
+  </header>
+
+  <main class="chatbot">
+    <!-- LevelUp: shows the latest question, resets with every new one -->
+    <p id="latestQuestion" class="latest-question" hidden></p>
+
+    <!-- LevelUp: chat bubbles go in here -->
+    <div id="chatWindow" class="chat-window" aria-live="polite"></div>
+
+    <form id="chatForm" class="input-row">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask me about any L'Oréal product or routine…"
+        autocomplete="off"
+        required
+      >
+      <button type="submit" id="sendBtn" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+        </svg>
+      </button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 L'Oréal. All rights reserved.</p>
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
